@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+<button>
+    menu
+</button>
+<h1>Les chats</h1>
+<nav 
+id="mainNav" 
+x-show="menuIsOpen" 
+x-transition.duration.800ms
+class="menu"
+>
+  <ul>
+    <li><a href="/public/img/cats/640px-Cat_close-up_2004_b.jpg">Chat aux yeux bleu</a></li>
+    <li><a href="/public/img/cats/Tabby_cat_with_blue_eyes-3336579.jpg">Chat aux yeux vert</a></li>
+  </ul>
+</nav>    
+</body>
+</html>
