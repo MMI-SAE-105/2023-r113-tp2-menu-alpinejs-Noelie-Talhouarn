@@ -7,7 +7,7 @@
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-<header x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}"></header>
+<header x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
 <button
 aria-controls="mainNav" 
 @click="menuIsOpen = ! menuIsOpen"
@@ -15,6 +15,7 @@ class="header__menuBtn"
 >
     menu
 </button>
+
 <nav 
 id="mainNav" 
 x-show="menuIsOpen" 
@@ -28,7 +29,7 @@ class="menu"
   </ul>
 </header>
 </nav>
-<h2>Chat aux yeux bleu</h2>
-<img src="../public/img/cats/Tabby_cat_with_blue_eyes-3336579.jpg" alt="">    
+<h2>Chat aux yeux vert</h2>
+<img src="../public/img/cats/640px-Cat_close-up_2004_b.jpg" alt="">    
 </body>
 </html>
