@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+<header x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
+<button
+aria-controls="mainNav" 
+@click="menuIsOpen = ! menuIsOpen"
+class="header__menuBtn"
+> 
+    menu
+</button>
+<nav 
+id="mainNav" 
+x-show="menuIsOpen" 
+x-transition.duration.800ms
+class="menu"
+>
+  <ul>
+    <li><a href="/fr/index.html">Page d'accueil</a></li>
+    <li><a href="/fr/cats/index.html">Page chats</a></li>
+    <li><a href="/fr/dogs/index.html">Page chiens</a></li>
+  </ul>
+</header>
+<h1>Les chats</h1>
+  <ul>
+    <li><a href="/fr/cats/chat-1.html">Chat aux yeux bleus</a></li>
+    <li><a href="/fr/cats/chat-2.html">Chat aux yeux verts</a></li>
+  </ul>
+</nav> 
+</body>
+</html>
